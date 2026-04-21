@@ -61,7 +61,7 @@ public class Scoreboard {
         homeTeamPoints = 0;
         awayTeamPoints = 0;
         scoreHistory.clear();
-        lastAction = "Game cleared";
+        lastAction = "NA"; 
     }
 
     public String getHomeTeamName() { return homeTeamName; }
