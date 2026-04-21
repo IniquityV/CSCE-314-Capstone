@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" style="-fx-padding: 30; -fx-min-width: 500; -fx-alignment: center;"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.DisplayController">
+
+    <Label fx:id="scoreboardTitle" text="SCOREBOARD"/>
+
+    <Separator/>
+
+    <!-- Scores -->
+    <HBox spacing="40" style="-fx-alignment: center;">
+
+        <!-- Home Team -->
+        <VBox style="-fx-alignment: center;" spacing="8">
+            <Label fx:id="homeNameLabel" text="Home"/>
+            <Label fx:id="homeScoreLabel" text="0"/>
+        </VBox>
+
+        <Label text="—" style="-fx-font-size: 36px;"/>
+
+        <!-- Away Team -->
+        <VBox style="-fx-alignment: center;" spacing="8">
+            <Label fx:id="awayNameLabel" text="Away"/>
+            <Label fx:id="awayScoreLabel" text="0"/>
+        </VBox>
+
+    </HBox>
+
+    <Separator/>
+
+    <Label fx:id="lastActionLabel" text="No actions yet."/>
+
+</VBox>

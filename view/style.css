@@ -1,0 +1,145 @@
+/* ===== ROOT & BACKGROUND ===== */
+.root {
+    -fx-background-color: #1a1a2e;
+    -fx-font-family: "Arial";
+}
+
+/* ===== LABELS ===== */
+.label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 14px;
+}
+
+/* ===== SCOREBOARD DISPLAY ===== */
+#homeNameLabel, #awayNameLabel {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+#homeScoreLabel, #awayScoreLabel {
+    -fx-text-fill: #f5c518;
+    -fx-font-size: 72px;
+    -fx-font-weight: bold;
+}
+
+#lastActionLabel {
+    -fx-text-fill: #a0a0b0;
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+}
+
+/* ===== BUTTONS ===== */
+.button {
+    -fx-background-color: #16213e;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-color: #0f3460;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #0f3460;
+    -fx-text-fill: #f5c518;
+}
+
+.button:pressed {
+    -fx-background-color: #f5c518;
+    -fx-text-fill: #1a1a2e;
+}
+
+/* ===== SCORING BUTTONS ===== */
+#tdButton {
+    -fx-background-color: #0f3460;
+    -fx-text-fill: #f5c518;
+    -fx-border-color: #f5c518;
+}
+
+#tdButton:hover {
+    -fx-background-color: #f5c518;
+    -fx-text-fill: #1a1a2e;
+}
+
+/* ===== TEXT FIELDS ===== */
+.text-field {
+    -fx-background-color: #16213e;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #6060a0;
+    -fx-border-color: #0f3460;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 6px 10px;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused {
+    -fx-border-color: #f5c518;
+}
+
+/* ===== RADIO BUTTONS ===== */
+.radio-button {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 13px;
+}
+
+.radio-button:selected {
+    -fx-text-fill: #f5c518;
+}
+
+/* ===== SEPARATOR ===== */
+.separator .line {
+    -fx-border-color: #0f3460;
+    -fx-border-width: 1px;
+}
+
+/* ===== SCOREBOARD TITLE ===== */
+#scoreboardTitle {
+    -fx-text-fill: #f5c518;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 4px;
+}
+
+/* ===== OPERATOR PANEL TITLE ===== */
+#operatorTitle {
+    -fx-text-fill: #f5c518;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* ===== SECTION LABELS ===== */
+#teamSetupLabel, #scoringLabel, #scoreForLabel {
+    -fx-text-fill: #a0a0c0;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* ===== UNDO BUTTON ===== */
+#undoButton {
+    -fx-background-color: #2d1b4e;
+    -fx-border-color: #7b2fff;
+    -fx-text-fill: #c49fff;
+}
+
+#undoButton:hover {
+    -fx-background-color: #7b2fff;
+    -fx-text-fill: #ffffff;
+}
+
+/* ===== CLEAR BUTTON ===== */
+#clearButton {
+    -fx-background-color: #4e1b1b;
+    -fx-border-color: #ff4444;
+    -fx-text-fill: #ff9999;
+}
+
+#clearButton:hover {
+    -fx-background-color: #ff4444;
+    -fx-text-fill: #ffffff;
+}

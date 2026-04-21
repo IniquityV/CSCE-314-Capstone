@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" style="-fx-padding: 20; -fx-min-width: 400;"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.OperatorController">
+
+    <Label fx:id="operatorTitle" text="Scoreboard Operator"/>
+
+    <Separator/>
+
+    <!-- Team Setup Section -->
+    <Label fx:id="teamSetupLabel" text="TEAM SETUP"/>
+    <HBox spacing="10">
+        <TextField fx:id="homeNameField" promptText="Home Team Name" prefWidth="170"/>
+        <TextField fx:id="awayNameField" promptText="Away Team Name" prefWidth="170"/>
+        <Button fx:id="setNamesButton" text="Set Names" onAction="#handleSetNames"/>
+    </HBox>
+
+    <Separator/>
+
+    <!-- Team Selector -->
+    <Label fx:id="scoreForLabel" text="SCORE FOR:"/>
+    <HBox spacing="20">
+        <RadioButton fx:id="homeRadio" text="Home" selected="true">
+            <toggleGroup>
+                <ToggleGroup fx:id="teamToggle"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="awayRadio" text="Away" toggleGroup="$teamToggle"/>
+    </HBox>
+
+    <Separator/>
+
+    <!-- Scoring Buttons -->
+    <Label fx:id="scoringLabel" text="SCORING"/>
+    <HBox spacing="10">
+        <Button fx:id="tdButton"  text="+6 TD"  onAction="#handleTouchdown" prefWidth="80"/>
+        <Button text="+3 FG"  onAction="#handleFieldGoal"  prefWidth="80"/>
+        <Button text="+2 SAF" onAction="#handleSafety"     prefWidth="80"/>
+        <Button text="+1 PAT" onAction="#handlePAT"        prefWidth="80"/>
+    </HBox>
+
+    <Separator/>
+
+    <!-- Undo and Clear -->
+    <HBox spacing="10">
+        <Button fx:id="undoButton"  text="Undo Last"  onAction="#handleUndo"  prefWidth="170"/>
+        <Button fx:id="clearButton" text="Clear Game" onAction="#handleClear" prefWidth="170"/>
+    </HBox>
+
+</VBox>
